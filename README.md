@@ -12,7 +12,7 @@ Deno: >1.40.0
 Run in directory you would like the output in
 
 `cat ~/Downloads/DayOneFolderExport/Journal\ 2.json | deno task dev -r ~/Downloads/DayOneFolderExport/`
-`cat ~/Downloads/DayOneFolderExport/Journal\ 2.json | ./bin/dlmd -r ~/Downloads/DayOneFolderExport/``
+`cat ~/Downloads/DayOneFolderExport/Journal\ 2.json | ./bin/dlmd -r ~/Downloads/DayOneFolderExport/`
 
 ### Troubleshooting
 
