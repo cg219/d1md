@@ -1,0 +1,43 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "jsr:@std/assert@^0.216.0": "jsr:@std/assert@0.216.0",
+      "jsr:@std/cli@0.216": "jsr:@std/cli@0.216.0",
+      "jsr:@std/path@0.216": "jsr:@std/path@0.216.0"
+    },
+    "jsr": {
+      "@std/assert@0.216.0": {},
+      "@std/cli@0.216.0": {
+        "dependencies": [
+          "jsr:@std/assert@^0.216.0"
+        ]
+      },
+      "@std/path@0.216.0": {
+        "dependencies": [
+          "jsr:@std/assert@^0.216.0"
+        ]
+      }
+    }
+  },
+  "remote": {
+    "https://jsr.io/@std/assert/0.216.0/assert.ts": "501b416473ec27c71885aaf819e363c8df617f89ce68ae57fec7acf9d62743b2",
+    "https://jsr.io/@std/assert/0.216.0/assertion_error.ts": "dd027fb33707dbff22cd2ef9b55fdb70e2095876caf3c68ecfbb811505ecc022",
+    "https://jsr.io/@std/cli/0.216.0/mod.ts": "58f75df8ce43fb8266bdd26ec4465f73176b910316d72eb8e090b6a0549391da",
+    "https://jsr.io/@std/cli/0.216.0/parse_args.ts": "98786a4ba2c7d71ddccfdc0a6590284a4ca6215b853c74616432680feb4541bb",
+    "https://jsr.io/@std/cli/0.216.0/prompt_secret.ts": "831cfb4efa83bfaf9bfd320ddbfd619e03cd87e81260909f93ca199ebe214ec2",
+    "https://jsr.io/@std/cli/0.216.0/spinner.ts": "60a544b0592625d76061db090893be981055428d9b97f42d20fdeb04edfb9123",
+    "https://jsr.io/@std/path/0.216.0/_common/assert_path.ts": "2ca275f36ac1788b2acb60fb2b79cb06027198bc2ba6fb7e163efaedde98c297",
+    "https://jsr.io/@std/path/0.216.0/_common/constants.ts": "dc5f8057159f4b48cd304eb3027e42f1148cf4df1fb4240774d3492b5d12ac0c",
+    "https://jsr.io/@std/path/0.216.0/_common/normalize.ts": "684df4aa71a04bbcc346c692c8485594fc8a90b9408dfbc26ff32cf3e0c98cc8",
+    "https://jsr.io/@std/path/0.216.0/_common/normalize_string.ts": "dfdf657a1b1a7db7999f7c575ee7e6b0551d9c20f19486c6c3f5ff428384c965",
+    "https://jsr.io/@std/path/0.216.0/_os.ts": "8fb9b90fb6b753bd8c77cfd8a33c2ff6c5f5bc185f50de8ca4ac6a05710b2c15",
+    "https://jsr.io/@std/path/0.216.0/join.ts": "ae2ec5ca44c7e84a235fd532e4a0116bfb1f2368b394db1c4fb75e3c0f26a33a",
+    "https://jsr.io/@std/path/0.216.0/posix/_util.ts": "b24abdfa97820d3a9dc696bf7947c35ac2cf5d836c16ae20592a8dc0757321a3",
+    "https://jsr.io/@std/path/0.216.0/posix/join.ts": "1bbf0d9303160d4b9be76161d0ef73d67198cf7bf66e84d88eb560abc492070f",
+    "https://jsr.io/@std/path/0.216.0/posix/normalize.ts": "9b9f666159c0e5ee3df292cf56555547b1be4cd3ca54da6a263a3074b8e44964",
+    "https://jsr.io/@std/path/0.216.0/windows/_util.ts": "8f491fe68728772ce98d3bdf54dcd89c823d5ecd2bec6153c343a95843f625ca",
+    "https://jsr.io/@std/path/0.216.0/windows/join.ts": "f5dfbc962646b40cd3168a67e494f027b421eff4b7649a462392595efbfdc2e2",
+    "https://jsr.io/@std/path/0.216.0/windows/normalize.ts": "f5d8b971161eff7b4f8e45c7520cbb0c6553ccff7c4b3ced2dfe0d6ad46a2328"
+  }
+}

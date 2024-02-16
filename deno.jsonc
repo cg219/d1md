@@ -1,0 +1,6 @@
+{
+    "tasks": {
+        "dev": "deno run -A mod.ts",
+        "build": "deno compile --allow-write --allow-read -o bin/d1md mod.ts"
+    }
+}
