@@ -82,20 +82,30 @@ const output = "OUTPUT";
 const filesProcessed = [];
 
 function template(vals: JournalData) {
+    const [ date, time] = getDateTime(vals.creationDate, vals.timeZone)
+    const [ modDate, modTime] = getDateTime(vals.modifiedDate, vals.timeZone)
     return `
 ---
 device: ${vals.creationDevice}
-date: ${vals.creationDate}
+date: ${date} 
+time: ${time}
 country: ${vals.location?.country}
 city: ${vals.location?.localityName}
 long: ${vals.location?.longitude}
 lat: ${vals.location?.latitude}
-updated: ${vals.modifiedDate}
+updateddate: ${modDate}
+updatedtime: ${modTime}
 timezone: ${vals.timeZone}
 ---
 
 ${parseMedia(vals.text)}
 `
+}
+
+function getDateTime(dateString: string, timezone: string = "America/New_York") {
+    const zdt = Temporal.Instant.from(dateString).toZonedDateTimeISO(timezone);
+
+    return [zdt.toPlainDate(), `${zdt.hour.toString().padStart(2, "0")}:${zdt.minute.toString().padStart(2, "0")}`]
 }
 
 function parseMedia(data: string) {
